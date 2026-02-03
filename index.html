@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mali Shakes | Arctic Edition | Ahmedabad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700;900&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --accent: #00f2ff; /* Arctic Cyan */
+            --accent-glow: rgba(0, 242, 255, 0.3);
+            --bg: #020617; /* Deep Midnight Navy */
+            --glass: rgba(255, 255, 255, 0.03);
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg);
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, .font-heading {
+            font-family: 'Unbounded', sans-serif;
+        }
+        .glass-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            border-color: var(--accent);
+            background: rgba(0, 242, 255, 0.03);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px -15px rgba(0, 242, 255, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #ffffff, #7dd3fc, #0ea5e9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-blur {
+            background: rgba(2, 6, 23, 0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .tab-active {
+            color: var(--accent) !important;
+            border-bottom: 2px solid var(--accent);
+            text-shadow: 0 0 10px var(--accent-glow);
+        }
+        .item-visual {
+            width: 100%;
+            height: 180px;
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+            background: rgba(0, 242, 255, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .item-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(0, 242, 255, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            font-weight: 900;
+            font-family: 'Unbounded';
+            font-size: 1.5rem;
+            box-shadow: 0 0 15px rgba(0, 242, 255, 0.1);
+        }
+        .item-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        .glass-card:hover .item-image {
+            transform: scale(1.1) rotate(2deg);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-item { animation: fadeIn 0.6s ease forwards; }
+        
+        /* Custom scrollbar for that icy feel */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg); }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+    </style></head>
+<body class="selection:bg-yellow-500 selection:text-black">
+
+    <!-- Floating Contact -->
+    <div class="fixed bottom-8 right-8 z-50 flex flex-col gap-4">
+        <a href="https://wa.me/9192157319XXX" target="_blank" class="bg-white/5 border border-white/10 text-white w-14 h-14 rounded-2xl flex items-center justify-center hover:bg-yellow-500 hover:text-black transition-all">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-40 nav-blur border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+            <div class="text-xl font-black font-heading tracking-tighter">
+                MALI<span class="text-yellow-500">.</span>
+            </div>
+            <div class="hidden md:flex gap-10 text-[10px] font-black uppercase tracking-[0.3em] text-gray-500">
+                <a href="#home" class="hover:text-white transition">Menu</a>
+                <a href="#about" class="hover:text-white transition">The Owners</a>
+                <a href="#contact" class="hover:text-white transition">Visit</a>
+            </div>
+            <div class="text-[10px] font-black bg-white text-black px-5 py-2 rounded-lg">NAVRANGPURA</div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
+        <div class="max-w-4xl">
+            <h1 class="text-5xl md:text-8xl font-black leading-tight tracking-tighter mb-8">
+                THE ART OF THE <br> <span class="gradient-text">THICK SHAKE.</span>
+            </h1>
+            <p class="text-gray-500 text-lg md:text-xl font-light max-w-2xl mx-auto mb-12">
+                Pure ingredients. Zero clutter. Hand-crafted by <span class="text-white font-bold">Vishal & Haresh Mali</span> for the refined palate of Ahmedabad.
+            </p>
+            <div class="flex gap-4 justify-center">
+                <a href="#menu" class="bg-yellow-500 text-black px-10 py-4 rounded-xl font-black text-xs uppercase tracking-widest hover:scale-105 transition">Explore Selection</a>
+             
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center border-b border-white/5 mb-16 gap-6">
+                <div class="flex flex-wrap justify-center md:justify-start gap-8">
+                    <button onclick="filterMenu('shakes', this)" class="tab-btn tab-active pb-4 font-black text-[10px] uppercase tracking-[0.2em] transition-all">Shakes</button>
+                    <button onclick="filterMenu('juice', this)" class="tab-btn pb-4 text-gray-500 font-black text-[10px] uppercase tracking-[0.2em] transition-all hover:text-white">Juices</button>
+                    <button onclick="filterMenu('faluda', this)" class="tab-btn pb-4 text-gray-500 font-black text-[10px] uppercase tracking-[0.2em] transition-all hover:text-white">Faluda</button>
+                    <button onclick="filterMenu('lassi', this)" class="tab-btn pb-4 text-gray-500 font-black text-[10px] uppercase tracking-[0.2em] transition-all hover:text-white">Lassi</button>
+                    <button onclick="filterMenu('icecream', this)" class="tab-btn pb-4 text-gray-500 font-black text-[10px] uppercase tracking-[0.2em] transition-all hover:text-white">Ice Cream</button>
+                    <button onclick="filterMenu('fruits', this)" class="tab-btn pb-4 text-gray-500 font-black text-[10px] uppercase tracking-[0.2em] transition-all hover:text-white">Fruits</button>
+                </div>
+                <div class="pb-4 text-[10px] text-yellow-500 font-black uppercase tracking-widest">60 Premium Choices</div>
+            </div>
+
+            <!-- Menu Grid -->
+            <div id="menu-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Javascript will populate items here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-32 px-6 bg-white/[0.01]">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="text-yellow-500 text-[10px] font-black uppercase tracking-[0.5em] mb-4 block">The Owners</span>
+            <h2 class="text-4xl md:text-6xl font-black mb-10 tracking-tighter">VISHAL & HARESH MALI</h2>
+            <div class="h-px w-20 bg-yellow-500 mx-auto mb-10"></div>
+            <p class="text-gray-400 text-xl leading-relaxed font-light italic">
+                "We believe a dessert shop should be more than just a menu. It's a craft. By focusing on the purity of our ingredients, we bring the true taste of Ahmedabad to life."
+            </p>
+            <div class="grid grid-cols-2 gap-8 mt-20">
+                <div class="text-left p-8 glass-card">
+                    <p class="text-yellow-500 font-black mb-2 tracking-widest uppercase text-xs">Vishal Mali</p>
+                    <p class="text-gray-500 text-sm">Master of Flavor Mixology & Sourcing</p>
+                </div>
+                <div class="text-left p-8 glass-card">
+                    <p class="text-yellow-500 font-black mb-2 tracking-widest uppercase text-xs">Haresh Mali</p>
+                    <p class="text-gray-500 text-sm">Head of Operations & Quality Control</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 px-6 border-t border-white/5">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-20">
+        
+        <div>
+            <h3 class="text-4xl font-black mb-10 font-heading uppercase">Locate Us.</h3>
+            
+            <div class="space-y-10">
+                <div>
+                    <p class="text-yellow-500 text-[10px] font-black uppercase tracking-widest mb-2">Address</p>
+                    <p class="text-xl font-bold">Navrangpura, Commerce Six Roads</p>
+                    <p class="text-gray-500">Ahmedabad, Gujarat 380009</p>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Commerce+Six+Roads+Navrangpura+Ahmedabad" 
+                       target="_blank" 
+                       class="inline-block mt-4 text-xs font-bold text-yellow-500 hover:underline">
+                       GET DIRECTIONS →
+                    </a>
+                </div>
+
+                <div>
+                    <p class="text-yellow-500 text-[10px] font-black uppercase tracking-widest mb-2">Connect</p>
+                    <a href="tel:92157319XXX" class="text-xl font-bold block hover:text-yellow-500 transition-colors">92157 319XXX</a>
+                    <a href="tel:9998074XXX" class="text-xl font-bold block hover:text-yellow-500 transition-colors">99980 74XXX</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-card overflow-hidden min-h-[300px] border-2 border-white/10 shadow-2xl">
+            <iframe 
+                width="100%" 
+                height="100%" 
+                style="border:0; min-height: 300px; filter: grayscale(0.2) contrast(1.2);" 
+                loading="lazy" 
+                allowfullscreen 
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.6979213501!2d72.55243887588301!3d23.034877415849887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84f50965d64b%3A0x88989a31a9807204!2sCommerce%20Six%20Rd%2C%20Navrangpura%2C%20Ahmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1700000000000">
+            </iframe>
+        </div>
+
+    </div>
+</section>
+    <!-- Footer -->
+    <footer class="py-20 text-center border-t border-white/5">
+        <p class="text-gray-600 text-[10px] font-black uppercase tracking-[0.4em]">© 2026 MALI SHAKES | Ahmedabad</p>
+    </footer>
+
+    <script>
+        /**
+         * MENU DATA CONFIGURATION
+         * To add images manually: Replace "" with your image URL in the 'image' field.
+         */
+        const menuData = {
+            shakes: [
+                { name: "Belgian Noir", desc: "Pure 70% Dark cocoa", price: "₹210", image: "" },
+                { name: "Ferrero Luxe", desc: "Hazelnut praline blend", price: "₹260", image: "" },
+                { name: "Lotus Speculoos", desc: "Caramelized cookie dust", price: "₹240", image: "" },
+                { name: "Kaju Katli Special", desc: "Pure cashew & silver leaf", price: "₹280", image: "" },
+                { name: "Oreo Espresso", desc: "Cookie & arabica double shot", price: "₹190", image: "" },
+                { name: "Nutella Thick", desc: "Layered hazelnut cream", price: "₹230", image: "" },
+                { name: "Alphonso Cream", desc: "Seasonal pure mango pulp", price: "₹250", image: "" },
+                { name: "Red Velvet", desc: "Cream cheese infusion", price: "₹240", image: "" },
+                { name: "Butterscotch Gold", desc: "English toffee crunch", price: "₹180", image: "" },
+                { name: "Rose Petal", desc: "Authentic gulkand base", price: "₹200", image: "" }
+            ],
+            juice: [
+                { name: "Mara Mari", desc: "Signature citrus blend", price: "₹90", image: "" },
+                { name: "ABC Detox", desc: "Apple, Beet, Carrot coldpress", price: "₹140", image: "" },
+                { name: "Watermelon Mint", desc: "Chilled garden fresh", price: "₹110", image: "" },
+                { name: "Mosambi Pure", desc: "Zero sugar fresh lime", price: "₹120", image: "" },
+                { name: "Emerald Kiwi", desc: "Zesty green New Zealand", price: "₹180", image: "" },
+                { name: "Pomegranate", desc: "Hand-peeled local ruby", price: "₹160", image: "" },
+                { name: "Valencia Orange", desc: "Premium import citrus", price: "₹150", image: "" },
+                { name: "Pineapple Punch", desc: "Sweet tropical crush", price: "₹110", image: "" },
+                { name: "Black Grape", desc: "Seedless vineyard extract", price: "₹140", image: "" },
+                { name: "Lemon Mint", desc: "The classic cooler", price: "₹80", image: "" }
+            ],
+            faluda: [
+                { name: "The Mali Special", desc: "Our house secret blend", price: "₹240", image: "" },
+                { name: "Royal Shahi", desc: "Saffron milk & dry fruits", price: "₹200", image: "" },
+                { name: "Kesar Pista", desc: "Real saffron threads", price: "₹220", image: "" },
+                { name: "Rabdi Indulgence", desc: "Slow-cooked cream layers", price: "₹250", image: "" },
+                { name: "Chocolate Dream", desc: "Cocoa vermicelli mix", price: "₹210", image: "" },
+                { name: "Mango Monsoon", desc: "Fresh fruit chunk layers", price: "₹230", image: "" },
+                { name: "Dry Fruit Loaded", desc: "Almond & Cashew rain", price: "₹280", image: "" },
+                { name: "Rose Bliss", desc: "Traditional syrup blend", price: "₹180", image: "" },
+                { name: "Butterscotch", desc: "Toffee cream base", price: "₹200", image: "" },
+                { name: "Paan Gulkand", desc: "Refreshing betel leaf", price: "₹210", image: "" }
+            ],
+            lassi: [
+                { name: "Patiala Sweet", desc: "Thick malai kulhad style", price: "₹100", image: "" },
+                { name: "Mango Fusion", desc: "Pureed Alphonso yogurt", price: "₹130", image: "" },
+                { name: "Dry Fruit Lassi", desc: "Nutty energy booster", price: "₹160", image: "" },
+                { name: "Rose Swirl", desc: "Pink floral refreshment", price: "₹110", image: "" },
+                { name: "Chocolate Lassi", desc: "Modern cocoa fusion", price: "₹120", image: "" },
+                { name: "Kesar Saffron", desc: "Royal aroma infusion", price: "₹140", image: "" },
+                { name: "Strawberry Whip", desc: "Berry thick curd", price: "₹120", image: "" },
+                { name: "Malai Rabdi", desc: "Triple thickness extra cream", price: "₹150", image: "" },
+                { name: "Mint Cooling", desc: "Savory summer digestive", price: "₹90", image: "" },
+                { name: "Banana Cream", desc: "Fruity thick shake-style", price: "₹110", image: "" }
+            ],
+            icecream: [
+                { name: "Roasted Almond", desc: "California nut crunch", price: "₹180", image: "" },
+                { name: "Swiss Velvet", desc: "Dark cocoa cake mix", price: "₹160", image: "" },
+                { name: "Rajbhog Royal", desc: "Saffron & Indian sweets", price: "₹190", image: "" },
+                { name: "Black Currant", desc: "Tangy berry chunks", price: "₹140", image: "" },
+                { name: "American Nuts", desc: "Fruit & jelly overload", price: "₹160", image: "" },
+                { name: "Tender Coconut", desc: "Real fresh malai", price: "₹200", image: "" },
+                { name: "Sitaphal Bliss", desc: "Creamy custard apple", price: "₹210", image: "" },
+                { name: "Belgian 80%", desc: "Deep cocoa satisfaction", price: "₹190", image: "" },
+                { name: "Cookie Monster", desc: "Blue biscuit crush", price: "₹150", image: "" },
+                { name: "Tutti Frutti", desc: "Classic colorful mix", price: "₹120", image: "" }
+            ],
+            fruits: [
+                { name: "Jamun Shots", desc: "Salted rim purple treat", price: "₹140", image: "" },
+                { name: "Exotic Fruit Cream", desc: "Imported berry mix", price: "₹250", image: "" },
+                { name: "Mango Mania", desc: "Fresh slices & cream", price: "₹260", image: "" },
+                { name: "Strawberry Feast", desc: "Mahabaleshwar special", price: "₹280", image: "" },
+                { name: "Mixed Fruit Salad", desc: "12 garden fruit varieties", price: "₹200", image: "" },
+                { name: "Dragon Kiwi Bowl", desc: "The vibrant health mix", price: "₹320", image: "" },
+                { name: "Spiced Pineapple", desc: "Masala grilled slices", price: "₹120", image: "" },
+                { name: "Watermelon Heart", desc: "Chilled cubes & lime", price: "₹100", image: "" },
+                { name: "Banana Split", desc: "Luxury syrup boat", price: "₹190", image: "" },
+                { name: "Seasonal Sitaphal", desc: "Hand deseeded pulp", price: "₹240", image: "" }
+            ]
+        };
+
+        function filterMenu(category, element) {
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('tab-active', 'text-white');
+                btn.classList.add('text-gray-500');
+            });
+
+            let activeBtn = element;
+            if (!activeBtn) {
+                const buttons = Array.from(document.querySelectorAll('.tab-btn'));
+                activeBtn = buttons.find(btn => btn.getAttribute('onclick').includes(`'${category}'`));
+            }
+
+            if (activeBtn) {
+                activeBtn.classList.add('tab-active', 'text-white');
+                activeBtn.classList.remove('text-gray-500');
+            }
+
+            const grid = document.getElementById('menu-grid');
+            if (grid) {
+                grid.innerHTML = '';
+                
+                menuData[category].forEach((item, index) => {
+                    const hasImage = item.image && item.image.trim() !== "";
+                    const initial = item.name.charAt(0);
+                    
+                    const visualContent = hasImage 
+                        ? `<img src="${item.image}" alt="${item.name}" class="item-image">`
+                        : `<div class="item-icon">${initial}</div>`;
+
+                    const card = `
+                        <div class="glass-card p-6 group flex flex-col animate-item" style="animation-delay: ${index * 0.03}s">
+                            <div class="item-visual">
+                                ${visualContent}
+                            </div>
+                            <h4 class="font-black text-lg mb-2 font-heading tracking-tight">${item.name}</h4>
+                            <p class="text-gray-500 text-[10px] mb-6 uppercase tracking-widest leading-relaxed">${item.desc}</p>
+                            <div class="mt-auto pt-6 border-t border-white/5 flex justify-between items-center">
+                                <span class="text-yellow-500 font-black text-lg font-heading">${item.price}</span>
+                                <i class="fas fa-plus text-[10px] text-white/20 group-hover:text-yellow-500 transition-colors"></i>
+                            </div>
+                        </div>
+                    `;
+                    grid.innerHTML += card;
+                });
+            }
+        }
+
+        window.onload = () => filterMenu('shakes');
+    </script>
+</body>
+</html>
